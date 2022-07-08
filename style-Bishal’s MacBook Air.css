@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    background: var(--line-bg-color);
+}
+
+:root {
+    --line-bg-color: #DBD9C4;
+}
+
+body {
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--line-bg-color);
+}
+
+.wrapper {
+    position: relative;
+    margin: 20px;
+    width: 90vw;
+    height: 90vh;
+    background: #fff;
+    border-radius: 23px;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.403);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    background-color: var(--line-bg-color);
+    overflow: hidden;
+    position: fixed;
+    bottom: calc(100% - 758px);
+    width: 100%;
+    max-width: 88.5vw;
+    border-radius: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 4px;
+    box-shadow: 0px 4px 2px 0 rgba(0, 0, 0, 0.403);
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-right: #000000 1px solid;
+}
+
+
+.nav-link:last-child {
+    border-right: none;
+}
+
+@media (max-width: 867.98px) {
+
+    .wrapper {
+        margin: 20px;
+    }
+
+    .navbar {
+        background-color: var(--line-bg-color);
+        overflow: hidden;
+        position: fixed;
+        bottom: calc(100% - 843px);
+        width: 100%;
+        max-width: 88.5vw;
+        border-radius: 23px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        box-shadow: 0px 4px 2px 0 rgba(0, 0, 0, 0.403);
+    }
+
+    .nav-link {
+        border-right: #000000 solid 1px;
+        width: 120px;
+    }
+
+    .nav-link>h5 {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav-link {
+        border-right: #000000 solid 1px;
+        width: 120px;
+    }
+}
